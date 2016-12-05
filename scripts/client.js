@@ -1,18 +1,7 @@
 var movies = [];
 
-var printToDom = function() {
-    var displayName = function() {
-        for (var i = 0; i < movies.length; i++) {
-            var x = x + bob[i];
-        }
-    };
-    document.getElementById('arrayDisplay').innerHTML = displayName;
-};
-
-
-
 $(document).ready(function functionName() {
-    $("#search").click(function() {
+    $("#search_button").click(function() {
         var title = $('#movieTitle').val();
         console.log('Now searching for ' + title);
         search(title);
@@ -32,9 +21,12 @@ $(document).ready(function functionName() {
             }
         });
     };
-
-    var printToDom = function() {
-        console.log('Now printing: ' + movies);
-        $('#displayMovies').append(movies);
-    }
 });
+
+function printToDom() {
+    console.log('Now printing: ' + movies);
+    for (var i = 0; i < (movies.length-1) ; i++) {
+      $('#displayMovies').append('<div id="title"> Movie Title: ' + movies[i].Title +' (' +movies[i].Year + ') </div> <br>');
+      $('#displayMovies').append('<img class="img-responsive center-block" src="'+ movies[i].Poster + '"></img>"' + '<br>');
+    }
+}

@@ -1,0 +1,28 @@
+#title {
+    color: black;
+    font-style: arial;
+    font-size: 30px;
+    text-align: center;
+}
+
+#search_button {
+  background: white;
+}
+
+#search_button:hover {
+    background: white;
+}
+
+body {
+    background: grey;
+}
+.seach {
+    align-content: center;
+    width: 400px;
+    text-align:center;
+    margin-left: auto%;
+    margin-right: auto%;
+}
+#movieTitle {
+  width: 400px;
+}
